@@ -10,7 +10,7 @@ Version: 1.0.18
 # 60.X where X is an increasing int. 60 for rhel-6. We use
 # 70.X for rhel-7. For some reason we cannot rely on the
 # dist tag.
-Release: 60.5%{?dist}
+Release: 60.6%{?dist}
 Summary: JFree Java utility classes
 License: LGPLv2+
 Group: System Environment/Libraries
@@ -79,6 +79,9 @@ cp -p %{pkg_name}-xml-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/%{pkg_name}-xml.
 %files javadoc -f .mfiles-javadoc
 
 %changelog
+* Wed Jan 27 2016 Severin Gehwolf <sgehwolf@redhat.com> 1.0.18-60.6
+- Rebuild for RHSCL 2.2.
+
 * Mon Jan 19 2015 Severin Gehwolf <sgehwolf@redhat.com> 1.0.18-60.5
 - Rebuild with fixed thermostat1 meta package in BR.
 
