@@ -22,7 +22,7 @@
 
 Name: %{?scl_prefix}jcommon
 Version: 1.0.18
-Release: %{custom_release}.2%{?dist}
+Release: %{custom_release}.3%{?dist}
 Summary: JFree Java utility classes
 License: LGPLv2+
 Group: System Environment/Libraries
