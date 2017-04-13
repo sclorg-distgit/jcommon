@@ -22,7 +22,7 @@
 
 Name: %{?scl_prefix}jcommon
 Version: 1.0.18
-Release: %{custom_release}.3%{?dist}
+Release: %{custom_release}.4%{?dist}
 Summary: JFree Java utility classes
 License: LGPLv2+
 Group: System Environment/Libraries
@@ -89,6 +89,12 @@ cp -p %{pkg_name}-xml-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/%{pkg_name}-xml.
 %files javadoc -f .mfiles-javadoc
 
 %changelog
+* Wed Jan 18 2017 Jie Kang <jkang@redhat.com> 1.0.18-4
+- Rebuild with valid changelog entry
+
+* Thu Jan 12 2017 Jie Kang <jkang@redhat.com> 1.0.18-3
+- Rebuild for RHSCL 2.4
+
 * Fri Jun 24 2016 Severin Gehwolf <sgehwolf@redhat.com> 1.0.18-2
 - Change BR to rh-maven33-javapackages-local.
 
